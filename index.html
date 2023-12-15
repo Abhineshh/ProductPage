@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="index.js">
+        document.querySelector('.hamburger-icon').addEventListener('click', function () {
+            document.querySelector('nav').style.left = (document.querySelector('nav').style.left === '0px') ? '-100%' : '0px';
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <h1>Flame kaiser</h1>
+        </div>
+
+        <div class="header-icons">
+            <img src="./assets/gh.png" />
+            <img src="./assets/gh.png" />
+        </div>
+
+    </header>
+
+    <div class="hamburger-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav>
+        <div class="filter-container">
+            <h3 style="text-align: center;">Filter</h3>
+            <form name="filter-form">
+                <div>
+                    <label for="price">Price</label><br>
+                    <input type="range" id="priceRange" min="1000" max="10000" step="10" value="2500">
+                </div>
+                <div>
+                    <label for="age">For Age</label>
+                    <input name="age" type="number" placeholder="Enter Rider Age" />
+                </div><br>
+                <div>
+                    <label for="purpose">Purpose</label><br>
+                    <input name="purpose" type="checkbox" /> Touring <br>
+                    <input name="purpose" type="checkbox" /> Mountain Biking <br>
+                    <input name="purpose" type="checkbox" /> Backpacking <br>
+                    <input name="purpose" type="checkbox" /> BMX <br>
+                    <input name="purpose" type="checkbox" /> Track Racing <br>
+                </div><br>
+                <div>
+                    <label for="size">Size</label> <br>
+                    <input name="size" type="checkbox" /> 700C <br>
+                    <input name="size" type="checkbox" /> 29 inch <br>
+                    <input name="size" type="checkbox" /> 28 inch <br>
+                    <input name="size" type="checkbox" /> 27 inch <br>
+                    <input name="size" type="checkbox" /> 26 inch <br>
+                </div> <br>
+                <button>apply</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="main-section">
+
+
+
+
+        <div class="product-container">
+
+            <div class="product">
+                <img class="image-container" src="./assets/a3.jpg" />
+
+                <div class="price-container">
+                    <h2 class="product-name">the name of</h2>
+                    <h3 class="product-price">Rs.9090</h3>
+                    <p> write a program to show returning current object accessing
+                        member data of current object and returning values of objects
+                        using this pointer.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="image-container" src="./assets/a3.jpg" />
+
+                <div class="price-container">
+                    <h2 class="product-name">the name of</h2>
+                    <h3 class="product-price">Rs.9090</h3>
+                    <p> write a program to show returning current object accessing
+                        member data of current object and returning values of objects
+                        using this pointer.</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="product">
+                <img class="image-container" src="./assets/a3.jpg" />
+
+                <div class="price-container">
+                    <h2 class="product-name">the name of</h2>
+                    <h3 class="product-price">Rs.9090</h3>
+                    <p> write a program to show returning current object accessing
+                        member data of current object and returning values of objects
+                        using this pointer.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="image-container" src="./assets/a3.jpg" />
+
+                <div class="price-container">
+                    <h2 class="product-name">the name of</h2>
+                    <h3 class="product-price">Rs.9090</h3>
+                    <p> write a program to show returning current object accessing
+                        member data of current object and returning values of objects
+                        using this pointer.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img class="image-container" src="./assets/a3.jpg" />
+
+                <div class="price-container">
+                    <h2 class="product-name">the name of</h2>
+                    <h3 class="product-price">Rs.9090</h3>
+                    <p> write a program to show returning current object accessing
+                        member data of current object and returning values of objects
+                        using this pointer.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <footer>
+        <div class="contact-footer">
+            <span>
+                flamekaiser@idaten.com
+            </span>
+            <span>
+                +91-1234567890
+            </span>
+        </div>
+
+        <div class="links-footer">
+            <a href=""><img src="./assets/gh.png" /></a>
+            <a href=""><img src="./assets/gh.png" /></a>
+            <a href=""><img src="./assets/gh.png" /></a>
+            <a href=""><img src="./assets/gh.png" /></a>
+            <a href=""><img src="./assets/gh.png" /></a>
+            <a href=""><img src="./assets/gh.png" /></a>
+        </div>
+        <div class="footer-brand">
+            Flame Kaiser customs
+        </div>
+    </footer>
+
+</body>
+
+</html>
