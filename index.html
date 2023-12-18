@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="./index.css" />
-    <script src="index.js">
-        document.querySelector('.hamburger-icon').addEventListener('click', function () {
-            document.querySelector('nav').style.left = (document.querySelector('nav').style.left === '0px') ? '-100%' : '0px';
-        });
 
-    </script>
 </head>
 
 <body>
@@ -21,47 +16,47 @@
         </div>
 
         <div class="header-icons">
-            <img src="./assets/gh.png" />
-            <img src="./assets/gh.png" />
+            <img src="./assets/icons8-shopping-cart-100.png" class="cart-button" id="cartButton"/>
+            <button class="checkout-button" id="checkoutButton" type="button">Check Out</button>
         </div>
 
     </header>
 
-    <div class="hamburger-icon">
+    <button class="hamburger-icon" onclick="filter();">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-    </div>
+    </button>
 
-    <nav>
+    <nav id="nav">
         <div class="filter-container">
             <h3 style="text-align: center;">Filter</h3>
-            <form name="filter-form">
+            <form name="filter-form" id="myForm">
                 <div>
                     <label for="price">Price</label><br>
-                    <input type="range" id="priceRange" min="1000" max="10000" step="10" value="2500">
+                   <input type="range" id="priceRangeFilter" min="1000" max="10000" step="10" value="9000" /><span id="priceSpan">10</span>
                 </div>
                 <div>
                     <label for="age">For Age</label>
-                    <input name="age" type="number" placeholder="Enter Rider Age" />
+                    <input name="age" type="number" placeholder="Enter Rider Age" id="ageFilter" min="13" value="30"/>
                 </div><br>
                 <div>
                     <label for="purpose">Purpose</label><br>
-                    <input name="purpose" type="checkbox" /> Touring <br>
-                    <input name="purpose" type="checkbox" /> Mountain Biking <br>
-                    <input name="purpose" type="checkbox" /> Backpacking <br>
-                    <input name="purpose" type="checkbox" /> BMX <br>
-                    <input name="purpose" type="checkbox" /> Track Racing <br>
+                    <input name="purpose" value="touring" type="checkbox" /> Touring <br>
+                    <input name="purpose" value="Mtb" type="checkbox" /> Mountain Biking <br>
+                    <input name="purpose" value="backpacking" type="checkbox" /> Backpacking <br>
+                    <input name="purpose" value="bmx" type="checkbox" /> BMX <br>
+                    <input name="purpose" value="track" type="checkbox" /> Track Racing <br>
                 </div><br>
                 <div>
                     <label for="size">Size</label> <br>
-                    <input name="size" type="checkbox" /> 700C <br>
-                    <input name="size" type="checkbox" /> 29 inch <br>
-                    <input name="size" type="checkbox" /> 28 inch <br>
-                    <input name="size" type="checkbox" /> 27 inch <br>
-                    <input name="size" type="checkbox" /> 26 inch <br>
+                    <input name="size" value="700c" type="checkbox" /> 700C <br>
+                    <input name="size" value="29" type="checkbox" /> 29 inch <br>
+                    <input name="size" value="28" type="checkbox" /> 28 inch <br>
+                    <input name="size" value="27" type="checkbox" /> 27 inch <br>
+                    <input name="size" value="26" type="checkbox" /> 26 inch <br>
                 </div> <br>
-                <button>apply</button>
+                <button type="submit" class="apply-button">apply</button>
             </form>
         </div>
     </nav>
@@ -69,75 +64,30 @@
 
     <div class="main-section">
 
+        <div class="product-container" id="productContainer">
 
+            <div class="product" id="product">
 
-
-        <div class="product-container">
-
-            <div class="product">
-                <img class="image-container" src="./assets/a3.jpg" />
+                <img class="image-container" id="productImage" src="./assets/a3.jpg" />
 
                 <div class="price-container">
-                    <h2 class="product-name">the name of</h2>
-                    <h3 class="product-price">Rs.9090</h3>
-                    <p> write a program to show returning current object accessing
-                        member data of current object and returning values of objects
-                        using this pointer.</p>
+                    <h2 class="product-name" id="productName">the name of</h2>
+                    <h3 class="product-price" id="productPrice">Rs.9090</h3>
+                    <div class="description">
+                        <p class="productPurpose">touring</p> <p class="productSize">size</p> <p class="productAge">age</p>
+                    </div>
                 </div>
+
+                <div class="product-buttons">
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <button class="buy-only-button">Buy & Check-Out</button>
+                </div>
+
             </div>
 
-            <div class="product">
-                <img class="image-container" src="./assets/a3.jpg" />
+             
 
-                <div class="price-container">
-                    <h2 class="product-name">the name of</h2>
-                    <h3 class="product-price">Rs.9090</h3>
-                    <p> write a program to show returning current object accessing
-                        member data of current object and returning values of objects
-                        using this pointer.</p>
-                </div>
-            </div>
-
-
-
-
-            <div class="product">
-                <img class="image-container" src="./assets/a3.jpg" />
-
-                <div class="price-container">
-                    <h2 class="product-name">the name of</h2>
-                    <h3 class="product-price">Rs.9090</h3>
-                    <p> write a program to show returning current object accessing
-                        member data of current object and returning values of objects
-                        using this pointer.</p>
-                </div>
-            </div>
-
-            <div class="product">
-                <img class="image-container" src="./assets/a3.jpg" />
-
-                <div class="price-container">
-                    <h2 class="product-name">the name of</h2>
-                    <h3 class="product-price">Rs.9090</h3>
-                    <p> write a program to show returning current object accessing
-                        member data of current object and returning values of objects
-                        using this pointer.</p>
-                </div>
-            </div>
-            <div class="product">
-                <img class="image-container" src="./assets/a3.jpg" />
-
-                <div class="price-container">
-                    <h2 class="product-name">the name of</h2>
-                    <h3 class="product-price">Rs.9090</h3>
-                    <p> write a program to show returning current object accessing
-                        member data of current object and returning values of objects
-                        using this pointer.</p>
-                </div>
-            </div>
-
-
-
+              
         </div>
 
 
@@ -157,16 +107,19 @@
 
         <div class="links-footer">
             <a href=""><img src="./assets/gh.png" /></a>
-            <a href=""><img src="./assets/gh.png" /></a>
-            <a href=""><img src="./assets/gh.png" /></a>
-            <a href=""><img src="./assets/gh.png" /></a>
-            <a href=""><img src="./assets/gh.png" /></a>
-            <a href=""><img src="./assets/gh.png" /></a>
+            <a href=""><img src="./assets/fb.png" /></a>
+            <a href=""><img src="./assets/li.png" /></a>
+            <a href=""><img src="./assets/tt.png" /></a>
+            <a href=""><img src="./assets/yt.png" /></a>
+            <a href=""><img src="./assets/ig.png" /></a>
         </div>
         <div class="footer-brand">
             Flame Kaiser customs
         </div>
     </footer>
+
+    <script src="index.js"> </script>
+    <script src="product.js"></script>
 
 </body>
 

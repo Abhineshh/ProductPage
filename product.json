@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Product 1",
+        "image": "assets/a1.jpg",
+        "price": 8000,
+        "age": 14,
+        "size": 29,
+        "purpose": "touring"
+    },
+    {
+        "id": 2,
+        "name": "Product 2",
+        "image": "assets/a2.jpg",
+        "price": 2000,
+        "age": 17,
+        "size": 29,
+        "purpose": "backpacking"
+    },
+    {
+        "id": 3,
+        "name": "Product 3",
+        "image": "assets/a3.jpg",
+        "price": 10000,
+        "age": 20,
+        "size": 29,
+        "purpose": "mtb"
+    },
+       {
+        "id": 4,
+        "name": "Product 4",
+        "image": "assets/b1.webp",
+        "price": 1000,
+        "age": 22,
+        "size": 29,
+        "purpose": "bmx"
+    },
+    {
+        "id": 5,
+        "name": "Product 5",
+        "image": "assets/b2.jpg",
+        "price": 7000,
+        "age": 25,
+        "size": 26,
+        "purpose": "track"
+    },
+    {
+        "id": 6,
+        "name": "Product 6",
+        "image": "assets/b3.webp",
+        "price": 3000,
+        "age": 30,
+        "size": 29,
+        "purpose": "touring"
+    }
+]
